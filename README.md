@@ -1,6 +1,6 @@
 # Gym_Split
 
-> Gym Split is an app made for managing gym workout sessions to enable users to keep track of, edit and create workout sessions over a singular week.
+> Gym Split is an app made for managing gym workout sessions to enable users to keep track of, edit and create workout sessions over a singular week. Enter your workout regimen and edit and change your weekly split, workout exercises, set number and reps.
 
 # Setup:
 To be added...
@@ -9,7 +9,7 @@ To be added...
 To be added...
 
 #Built using:
-To be added...
+* Java
  
 #Created by:
 * James Wilson: [GitHub](https://github.com/james-wilson-21) | [LinkedIn](https://www.linkedin.com/in/james-wilson-72b0a077/)
