@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Theme.App.Starting" parent="Theme.GymSplit">
-        <item name="windowSplashScreenBackground">@color/background_black</item>
+        // Background colour
+        <item name="windowSplashScreenBackground">@color/purple_500</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/split_2</item>
         <item name="windowSplashScreenAnimationDuration">200</item>
         <item name="postSplashScreenTheme">@style/Theme.GymSplit</item>
