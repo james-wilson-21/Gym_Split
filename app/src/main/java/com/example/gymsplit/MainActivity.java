@@ -9,8 +9,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         // Handle the splash screen transition
         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
+
+        // Keep splash screen on for longer
+        
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
