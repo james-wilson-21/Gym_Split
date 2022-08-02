@@ -5,7 +5,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "Workout") // "Workout" refers to the table name, not the Class below
+@Entity(tableName = "Workout") // "Workout" refers to the table name, not the Class below;
 
  public class Workout {
 
