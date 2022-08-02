@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initialiseTitle();
     }
 
     private void dismissSplashScreen() {
@@ -44,5 +45,9 @@ public class MainActivity extends AppCompatActivity {
             // change boolean
             isAndroidReady = true;
         }, 2000);
+    }
+
+    private void initialiseTitle() {
+
     }
 }
