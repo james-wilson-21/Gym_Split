@@ -9,7 +9,10 @@ To be added...
 To be added...
 
 #Built using:
+* Android Studio
 * Java
+* SQLite (Room)
  
 #Created by:
 * James Wilson: [GitHub](https://github.com/james-wilson-21) | [LinkedIn](https://www.linkedin.com/in/james-wilson-72b0a077/)
+
