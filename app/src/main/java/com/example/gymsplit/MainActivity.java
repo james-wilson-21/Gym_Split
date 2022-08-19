@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
+        checkUser();
         initialiseTitle();
     }
 
@@ -47,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
         }, 2000);
     }
 
+    private void checkUser() {
+
+    }
     private void initialiseTitle() {
 
     }
