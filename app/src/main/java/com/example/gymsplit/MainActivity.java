@@ -35,8 +35,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
         super.onCreate(savedInstanceState);
+        checkUserExists();
         setContentView(R.layout.activity_login);
-        checkUser();
+
         initialiseTitle();
     }
 
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         }, 2000);
     }
 
-    private void checkUser() {
+    private void checkUserExists() {
 
     }
     private void initialiseTitle() {
