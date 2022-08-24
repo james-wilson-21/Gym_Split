@@ -7,10 +7,15 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    // Boolean variable
+    // Initialise Variables
     boolean isAndroidReady = false;
+    EditText loginUserName;
+    Button loginButton, exitButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -35,7 +40,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
+        
+        // Assign Variables
+        loginUserName = findViewById(R.id.loginEditText);
+        loginButton = findViewById(R.id.loginLoginButton);
+        exitButton = findViewById(R.id.loginExitButton);
+
+        initialiseTitle();
     }
 
     private void dismissSplashScreen() {
@@ -44,5 +56,9 @@ public class MainActivity extends AppCompatActivity {
             // change boolean
             isAndroidReady = true;
         }, 2000);
+    }
+
+    private void initialiseTitle() {
+
     }
 }
