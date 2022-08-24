@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     boolean isAndroidReady = false;
     EditText loginUserName;
     Button loginButton, exitButton;
+
+    SessionManager sessionManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -41,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        
+
         // Assign Variables
         loginUserName = findViewById(R.id.loginEditText);
         loginButton = findViewById(R.id.loginLoginButton);
