@@ -50,6 +50,15 @@ public class MainActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.loginLoginButton);
         exitButton = findViewById(R.id.loginExitButton);
 
+        sessionManager = new SessionManager(getApplicationContext());
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String sUsername = loginUserName.getText().toString().trim();
+            }
+        });
+
         initialiseTitle();
     }
 
