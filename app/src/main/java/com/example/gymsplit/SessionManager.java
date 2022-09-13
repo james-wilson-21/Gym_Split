@@ -27,7 +27,7 @@ public class SessionManager {
         return sharedPreferences.getBoolean("KEY_LOGIN", false);
     }
 
-    // Set username
+    // Set the username
     public void setUsername (String userName) {
         editor.putString("KEY_USERNAME", userName);
         editor.commit();
