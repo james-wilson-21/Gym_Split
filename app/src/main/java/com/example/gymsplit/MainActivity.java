@@ -55,7 +55,14 @@ public class MainActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Get text from EditText
                 String sUsername = loginUserName.getText().toString().trim();
+
+                // When username is empty
+                if (sUsername.equals("")) {
+                    // Display error message on EditText
+                    loginUserName.setError("Please enter username");
+                }
             }
         });
 
