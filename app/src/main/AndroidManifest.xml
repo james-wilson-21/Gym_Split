@@ -10,7 +10,8 @@
         android:supportsRtl="true">
         <activity
             android:name=".MainMenu"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Base.Theme.AppCompat" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

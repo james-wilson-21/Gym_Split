@@ -68,7 +68,9 @@ public class MainActivity extends AppCompatActivity {
                     sessionManager.setLogin(true);
                     // Store login in session
                     sessionManager.setUsername(sUsername);
-                    startActivity(new Intent(getApplicationContext()))
+                    startActivity(new Intent(getApplicationContext(), MainMenu.class));
+                    // Finish Activity
+                    finish();
                 }
             }
         });
