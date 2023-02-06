@@ -3,6 +3,7 @@ package com.example.gymsplit;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.splashscreen.SplashScreen;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -15,8 +16,9 @@ public class MainActivity extends AppCompatActivity {
     // Initialise Variables
     boolean isAndroidReady = false;
     EditText loginUserName;
-    Button loginButton, exitButton;
+    Button loginButton, exitButton, logoutButton;
 
+    TextView logged_in_user;
     SessionManager sessionManager;
 
     @Override
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_main);
 
         // Assign Variables
         loginUserName = findViewById(R.id.loginEditText);
@@ -62,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
                 if (sUsername.equals("")) {
                     // Display error message on EditText
                     loginUserName.setError("Please enter username");
+                } else {
+                    sessionManager.setLogin(true);
+                    // Store login in session
+                    sessionManager.setUsername(sUsername);
+//                    startActivity(new Intent(getApplicationContext()))
                 }
             }
         });
