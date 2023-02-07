@@ -22,12 +22,12 @@ public class SessionManager {
         editor.commit();
     }
 
-    // Create get Login method
+    // Create the get Login method
     public boolean getLogin () {
         return sharedPreferences.getBoolean("KEY_LOGIN", false);
     }
 
-    // Set username
+    // Set the username
     public void setUsername (String userName) {
         editor.putString("KEY_USERNAME", userName);
         editor.commit();

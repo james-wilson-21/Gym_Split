@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity
+            android:name=".MainMenu"
+            android:exported="false"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme='@style/Theme.App.Starting'>
+            android:theme="@style/Theme.App.Starting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
