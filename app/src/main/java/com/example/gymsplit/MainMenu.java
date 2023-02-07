@@ -41,7 +41,7 @@ public class MainMenu extends AppCompatActivity {
                 // Initialise alert dialog builder
                 AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
                 // Set title
-                builder .setTitle("Log our");
+                builder .setTitle("Log out");
                 // Set message
                 builder.setMessage("Are you sure you want to log out?");
                 // Set positive button
