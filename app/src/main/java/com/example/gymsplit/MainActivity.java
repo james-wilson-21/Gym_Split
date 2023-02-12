@@ -44,10 +44,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // See if this works as a Main screen method
-        if(sessionManager.getLogin()) {
-            initialiseTitle();
-        } else {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -79,8 +75,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        initialiseTitle();
-    }
+        // If user is already logged in
+        if (sessionManager.getLogin()) {
+            // Redirect to menu
+            startActivity(new Intent(getApplicationContext(), MainMenu.class));
+        }
     }
 
     private void dismissSplashScreen() {
@@ -91,7 +90,4 @@ public class MainActivity extends AppCompatActivity {
         }, 2000);
     }
 
-    private void initialiseTitle() {
-
-    }
 }
