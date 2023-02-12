@@ -17,6 +17,14 @@
         android:fontFamily="monospace"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workOutTitle"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,6 +33,5 @@
         android:layout_marginTop="16dp"
         android:textColor="@android:color/white"
         android:background="@color/design_default_color_background"/>
-
 
 </LinearLayout>
