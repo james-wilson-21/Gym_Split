@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class MainMenu extends AppCompatActivity {
 
     // Initialise variables
-    TextView currentUserName;
+    TextView greeting, currentUserName;
     Button logoutButton;
 
     SessionManager sessionManager;
@@ -30,10 +30,12 @@ public class MainMenu extends AppCompatActivity {
         // Initialise SessionManager
         sessionManager = new SessionManager(getApplicationContext());
 
+        // Set greeting string
+        String greeting = getResources().getString(R.string.login_greeting);
         // Get username from session
         String sUsername = sessionManager.getUsername();
         // Set username on the TextView
-        currentUserName.setText(sUsername);
+        currentUserName.setText(greeting + " " + sUsername);
 
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
