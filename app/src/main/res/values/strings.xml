@@ -4,4 +4,5 @@
     <string name="login_exit_button">Exit</string>
     <string name="login_title_textview">User Log-in</string>
     <string name="login_username_edittext">Enter username</string>
+    <string name="login_welcome">Hey</string>
 </resources>

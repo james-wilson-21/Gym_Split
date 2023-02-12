@@ -44,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        if(sessionManager.getLogin()) {
+            initialiseTitle();
+        } else {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -74,8 +78,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
         initialiseTitle();
+    }
     }
 
     private void dismissSplashScreen() {
