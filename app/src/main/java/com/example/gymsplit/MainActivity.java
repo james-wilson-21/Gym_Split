@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // See if this works as a Main screen method
         if(sessionManager.getLogin()) {
             initialiseTitle();
         } else {
