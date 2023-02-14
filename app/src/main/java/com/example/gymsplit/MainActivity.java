@@ -44,9 +44,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        if(sessionManager.getLogin()) {
-            initialiseTitle();
-        } else {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -78,8 +75,20 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        initialiseTitle();
-    }
+
+        // Close application on exit button
+        exitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                System.exit(0);
+            }
+        });
+        // If user is already logged in
+        if (sessionManager.getLogin()) {
+            // Redirect to menu
+            startActivity(new Intent(getApplicationContext(), MainMenu.class));
+        }
     }
 
     private void dismissSplashScreen() {
@@ -90,7 +99,4 @@ public class MainActivity extends AppCompatActivity {
         }, 2000);
     }
 
-    private void initialiseTitle() {
-
-    }
 }
