@@ -75,6 +75,15 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        // Close application on exit button
+        exitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                System.exit(0);
+            }
+        });
         // If user is already logged in
         if (sessionManager.getLogin()) {
             // Redirect to menu

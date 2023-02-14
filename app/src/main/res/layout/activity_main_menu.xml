@@ -25,6 +25,36 @@
         android:fontFamily="monospace"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workOutTable">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/workoutNameText"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/workoutSplitText"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Split"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+        </TableRow>
+    </TableLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

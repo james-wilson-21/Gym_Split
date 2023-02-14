@@ -2,6 +2,7 @@ package com.example.gymsplit;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -10,10 +11,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class MainMenu extends AppCompatActivity {
 
     // Initialise variables
-    TextView workOutTitle, currentUserName;
+    public static GymDatabase gymDatabase;
+    TextView workOutTitle, currentUserName, tableWorkoutName, tableWorkoutSplitDays;
     Button logoutButton;
 
     SessionManager sessionManager;
@@ -22,7 +26,11 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-
+        gymDatabase = Room.databaseBuilder(getApplicationContext(), GymDatabase.class, "gymdb")
+                .allowMainThreadQueries()
+                .build();
+        tableWorkoutName = findViewById(R.id.workoutNameText);
+        tableWorkoutSplitDays =  findViewById(R.id.workoutSplitText);
         // Assign Variables
         currentUserName = findViewById(R.id.currentUserName);
         logoutButton = findViewById(R.id.logoutButton);
@@ -41,6 +49,7 @@ public class MainMenu extends AppCompatActivity {
         currentUserName.setText(greeting + " " + sUsername);
         // Set work out title
         workOutTitle.setText(workOut);
+        showWorkoutTable();
 
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,5 +88,16 @@ public class MainMenu extends AppCompatActivity {
                 alertDialog.show();
             }
         });
+    }
+
+    public void showWorkoutTable() {
+    List<Workout> workout = gymDatabase.workoutDao().getWorkout();
+    String workOutName= "", splitDayNumber= "";
+    for(Workout text: workout) {
+        workOutName += text.getWorkoutName() + "/n";
+        splitDayNumber += text.getSplitDays() + "/n";
+        tableWorkoutName.setText(workOutName);
+        tableWorkoutSplitDays.setText(splitDayNumber);
+    }
     }
 }
