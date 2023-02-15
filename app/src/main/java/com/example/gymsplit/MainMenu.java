@@ -98,8 +98,8 @@ public class MainMenu extends AppCompatActivity {
         newWorkOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-//                startActivity(new Intent(getApplicationContext(), ));
+                startActivity(new Intent(getApplicationContext(), AddWorkout.class));
+                finish();
             }
         });
     }
