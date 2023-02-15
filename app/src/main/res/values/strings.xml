@@ -6,4 +6,6 @@
     <string name="login_username_edittext">Enter username</string>
     <string name="login_greeting">Hey</string>
     <string name="title_workout">Workouts</string>
+    <string name="logout_button">Logout</string>
+    <string name="add_new_workout">Add new</string>
 </resources>
