@@ -18,7 +18,7 @@ public class MainMenu extends AppCompatActivity {
     // Initialise variables
     public static GymDatabase gymDatabase;
     TextView workOutTitle, currentUserName, tableWorkoutName, tableWorkoutSplitDays;
-    Button logoutButton;
+    Button logoutButton, newWorkOutButton;
 
     SessionManager sessionManager;
 
@@ -34,11 +34,17 @@ public class MainMenu extends AppCompatActivity {
         // Assign Variables
         currentUserName = findViewById(R.id.currentUserName);
         logoutButton = findViewById(R.id.logoutButton);
+        newWorkOutButton = findViewById(R.id.newWorkoutButton);
         workOutTitle = findViewById(R.id.workOutTitle);
 
         // Initialise SessionManager
         sessionManager = new SessionManager(getApplicationContext());
 
+        // Set button Text
+        String logout = getResources().getString(R.string.logout_button);
+        logoutButton.setText(logout);
+        String addNew = getResources().getString(R.string.add_new_workout);
+        newWorkOutButton.setText(addNew);
         // Set greeting string
         String greeting = getResources().getString(R.string.login_greeting);
         // Set work out menu title
@@ -86,6 +92,14 @@ public class MainMenu extends AppCompatActivity {
                 AlertDialog alertDialog = builder.create();
                 // Show alert dialog
                 alertDialog.show();
+            }
+        });
+
+        newWorkOutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+//                startActivity(new Intent(getApplicationContext(), ));
             }
         });
     }
