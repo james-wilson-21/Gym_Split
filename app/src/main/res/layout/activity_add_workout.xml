@@ -6,4 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".AddWorkout">
 
+<TextView
+android:id="@+id/addWorkoutName"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:fontFamily="monospace"
+android:textAppearance="@style/TextAppearance.AppCompat.Large"
+android:textStyle="bold"
+    android:textColor="@android:color/black"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintEnd_toStartOf="@id/addWorkoutInput"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintBottom_toTopOf="@id/addSplitDays"/>
+
+    <EditText
+        android:id="@+id/addWorkoutInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:autofillHints="Workout Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/addWorkoutName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/addSplitDaysInput"
+        tools:layout_editor_absoluteX="423dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <TextView
+        android:id="@+id/addSplitDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/addWorkoutName"
+        app:layout_constraintEnd_toStartOf="@id/addSplitDaysInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <EditText
+        android:id="@+id/addSplitDaysInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:autofillHints="Number"
+        app:layout_constraintTop_toBottomOf="@id/addWorkoutInput"
+        app:layout_constraintStart_toEndOf="@id/addSplitDays"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="423dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,4 +8,6 @@
     <string name="title_workout">Workouts</string>
     <string name="logout_button">Logout</string>
     <string name="add_new_workout">Add new</string>
+    <string name="add_workout_name">Workout Name</string>
+    <string name="add_split_days">Split Days</string>
 </resources>
