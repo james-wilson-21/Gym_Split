@@ -29,9 +29,9 @@ public class MainMenu extends AppCompatActivity {
         gymDatabase = Room.databaseBuilder(getApplicationContext(), GymDatabase.class, "gymdb")
                 .allowMainThreadQueries()
                 .build();
+        // Assign Variables
         tableWorkoutName = findViewById(R.id.workoutNameText);
         tableWorkoutSplitDays =  findViewById(R.id.workoutSplitText);
-        // Assign Variables
         currentUserName = findViewById(R.id.currentUserName);
         logoutButton = findViewById(R.id.logoutButton);
         newWorkOutButton = findViewById(R.id.newWorkoutButton);
