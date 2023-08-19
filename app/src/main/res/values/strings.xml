@@ -10,4 +10,6 @@
     <string name="add_new_workout">Add new</string>
     <string name="add_workout_name">Workout Name</string>
     <string name="add_split_days">Split Days</string>
+    <string name="day_one_button">Day One</string>
+    <string name="cancel_workout">Cancel</string>
 </resources>
