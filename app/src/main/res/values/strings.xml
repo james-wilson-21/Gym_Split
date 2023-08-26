@@ -12,4 +12,7 @@
     <string name="add_split_days">Split Days</string>
     <string name="day_one_button">Day One</string>
     <string name="cancel_workout">Cancel</string>
+    <string name="day_text">Day</string>
+    <string name="day_name_text">Day Name</string>
+    <string name="next_button">Next</string>
 </resources>
