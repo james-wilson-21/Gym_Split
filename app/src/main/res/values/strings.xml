@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Gym Split</string>
     <string name="login_login_button">Login</string>
-    <string name="login_exit_button">Exit</string>
+    <string name="exit_button">Exit</string>
     <string name="login_title_textview">User Log-in</string>
     <string name="login_username_edittext">Enter username</string>
     <string name="login_greeting">Hey</string>
@@ -15,4 +15,11 @@
     <string name="day_text">Day</string>
     <string name="day_name_text">Day Name</string>
     <string name="next_button">Next</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="four">Four</string>
+    <string name="five">Five</string>
+    <string name="six">Six</string>
+    <string name="seven">Seven</string>
 </resources>
