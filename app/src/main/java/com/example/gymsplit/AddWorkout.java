@@ -40,8 +40,6 @@ public class AddWorkout extends AppCompatActivity {
         String workOutTitle = workoutInput.getText().toString();
         String splitNumber = splitInput.getText().toString();
 
-//        split_next = false;
-//        workout_next = false;
 
         workOutName.setText(addWorkoutName);
         splitDays.setText(addSplitDays);
