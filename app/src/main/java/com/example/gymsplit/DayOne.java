@@ -3,7 +3,9 @@ package com.example.gymsplit;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -35,9 +37,20 @@ public class DayOne extends AppCompatActivity {
         dayText.setText(one);
         String firstDay = getResources().getString(R.string.day_name_text);
         dayName.setText(firstDay);
+        String getDayName = editName.getText().toString();
         String exitButton = getResources().getString(R.string.exit_button);
         dayOneExit.setText(exitButton);
         String nextButton = getResources().getString(R.string.next_button);
         dayOneNext.setText(nextButton);
+
+        dayOneNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DayOne.this, Exercise.class);
+                intent.putExtra("dayName", getDayName);
+                intent.putExtra("dayNumber", one);
+                startActivity(intent);
+            }
+        });
     }
 }
