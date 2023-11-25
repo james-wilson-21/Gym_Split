@@ -94,7 +94,7 @@ public class AddWorkout extends AppCompatActivity {
         dayOneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AddWorkout.this, DayOne.class);
+                Intent intent = new Intent(AddWorkout.this, DayName.class);
                 intent.putExtra("keyname", workOutTitle);
                 intent.putExtra("keySplit", splitNumber);
                 startActivity(intent);
