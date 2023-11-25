@@ -45,6 +45,7 @@ public class AddWorkout extends AppCompatActivity {
         splitDays.setText(addSplitDays);
         dayOneButton.setText(addDayButton);
         cancelButton.setText(addCancelButton);
+        dayOneButton.setEnabled(false);
 
 
 
@@ -67,7 +68,6 @@ public class AddWorkout extends AppCompatActivity {
                                       int before, int count) {
                 dayOneButton.setEnabled(workoutInput.getText().toString().trim().length() > 0
                         && splitInput.getText().toString().trim().length() > 0 );
-//                dayOneButton.setVisiblity(View.VISIBLE);
             }
             @Override
             public void afterTextChanged(Editable s) {
