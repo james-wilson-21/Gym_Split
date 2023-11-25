@@ -69,8 +69,7 @@ app:layout_constraintBottom_toTopOf="@id/addSplitDays"/>
         app:layout_constraintEnd_toStartOf="@id/cancelButton"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="2002dp"
-        android:visibility="invisible"/>
+        tools:layout_editor_absoluteY="2002dp" />
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="wrap_content"
