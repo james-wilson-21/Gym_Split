@@ -7,73 +7,73 @@
     tools:context=".DayName">
 
     <TextView
-        android:id="@+id/dayOneDayView"
+        android:id="@+id/dayNameDayView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/dayOneTextView"
-        app:layout_constraintBottom_toTopOf="@id/dayOneNameView"
+        app:layout_constraintEnd_toStartOf="@id/dayNameTextView"
+        app:layout_constraintBottom_toTopOf="@id/dayNameView"
         tools:layout_editor_absoluteX="83dp" />
 
     <TextView
-        android:id="@+id/dayOneTextView"
+        android:id="@+id/dayNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/dayOneDayView"
+        app:layout_constraintStart_toEndOf="@id/dayNameDayView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/dayOneNameView"
+        app:layout_constraintBottom_toTopOf="@id/dayNameView"
         tools:layout_editor_absoluteX="203dp"
         tools:layout_editor_absoluteY="63dp" />
 
     <TextView
-        android:id="@+id/dayOneNameView"
+        android:id="@+id/dayNameView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@id/dayOneDayView"
+        app:layout_constraintTop_toBottomOf="@id/dayNameDayView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/dayOneEditView"
+        app:layout_constraintBottom_toTopOf="@id/dayNameEditView"
         tools:layout_editor_absoluteX="88dp"
         tools:layout_editor_absoluteY="135dp" />
 
     <EditText
-        android:id="@+id/dayOneEditView"
+        android:id="@+id/dayNameEditView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
         android:text="Name"
-        app:layout_constraintTop_toBottomOf="@id/dayOneNameView"
+        app:layout_constraintTop_toBottomOf="@id/dayNameView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/dayOneExitButton"
+        app:layout_constraintBottom_toTopOf="@id/dayNameExitButton"
         tools:layout_editor_absoluteX="83dp"
         tools:layout_editor_absoluteY="180dp" />
 
     <Button
-        android:id="@+id/dayOneExitButton"
+        android:id="@+id/dayNameExitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        app:layout_constraintTop_toBottomOf="@id/dayOneEditView"
+        app:layout_constraintTop_toBottomOf="@id/dayNameEditView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/dayOneNextButton"
+        app:layout_constraintEnd_toStartOf="@id/dayNameNextButton"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="86dp"
         tools:layout_editor_absoluteY="306dp" />
 
     <Button
-        android:id="@+id/dayOneNextButton"
+        android:id="@+id/dayNameNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        app:layout_constraintTop_toBottomOf="@id/dayOneEditView"
-        app:layout_constraintStart_toEndOf="@id/dayOneExitButton"
+        app:layout_constraintTop_toBottomOf="@id/dayNameEditView"
+        app:layout_constraintStart_toEndOf="@id/dayNameExitButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="238dp"

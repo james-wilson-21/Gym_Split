@@ -15,7 +15,7 @@ public class DayName extends AppCompatActivity {
 
     EditText editName;
 
-    Button dayOneExit, dayOneNext;
+    Button dayNameExit, dayNameNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +23,12 @@ public class DayName extends AppCompatActivity {
         setContentView(R.layout.activity_day_name);
 
         // Assign Variables
-        dayView = findViewById(R.id.dayOneDayView);
-        dayText = findViewById(R.id.dayOneTextView);
-        dayName = findViewById(R.id.dayOneNameView);
-        editName = findViewById(R.id.dayOneEditView);
-        dayOneExit = findViewById(R.id.dayOneExitButton);
-        dayOneNext = findViewById(R.id.dayOneNextButton);
+        dayView = findViewById(R.id.dayNameDayView);
+        dayText = findViewById(R.id.dayNameTextView);
+        dayName = findViewById(R.id.dayNameView);
+        editName = findViewById(R.id.dayNameEditView);
+        dayNameExit = findViewById(R.id.dayNameExitButton);
+        dayNameNext = findViewById(R.id.dayNameNextButton);
         // Set TextView Strings
         String dayTitle = getResources().getString(R.string.day_text);
         dayView.setText(dayTitle);
@@ -38,11 +38,11 @@ public class DayName extends AppCompatActivity {
         dayName.setText(firstDay);
         String getDayName = editName.getText().toString();
         String exitButton = getResources().getString(R.string.exit_button);
-        dayOneExit.setText(exitButton);
+        dayNameExit.setText(exitButton);
         String nextButton = getResources().getString(R.string.next_button);
-        dayOneNext.setText(nextButton);
+        dayNameNext.setText(nextButton);
 
-        dayOneExit.setOnClickListener(new View.OnClickListener() {
+        dayNameExit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), MainMenu.class));
@@ -50,7 +50,7 @@ public class DayName extends AppCompatActivity {
             }
         });
 
-        dayOneNext.setOnClickListener(new View.OnClickListener() {
+        dayNameNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DayName.this, Exercise.class);
