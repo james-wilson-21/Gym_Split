@@ -66,7 +66,8 @@ public class AddWorkout extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
                 dayOneButton.setEnabled(workoutInput.getText().toString().trim().length() > 0
-                        && splitInput .getText().toString().trim().length() > 0 );
+                        && splitInput.getText().toString().trim().length() > 0 );
+//                dayOneButton.setVisiblity(View.VISIBLE);
             }
             @Override
             public void afterTextChanged(Editable s) {
@@ -82,7 +83,7 @@ public class AddWorkout extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
                 dayOneButton.setEnabled(workoutInput.getText().toString().trim().length() > 0
-                        && splitInput .getText().toString().trim().length() > 0 );
+                        && splitInput.getText().toString().trim().length() > 0 );
             }
             @Override
             public void afterTextChanged(Editable s) {
@@ -93,7 +94,6 @@ public class AddWorkout extends AppCompatActivity {
         dayOneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(AddWorkout.this, DayOne.class);
                 intent.putExtra("keyname", workOutTitle);
                 intent.putExtra("keySplit", splitNumber);
