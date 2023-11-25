@@ -12,7 +12,7 @@
             android:exported="false"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity
-            android:name=".DayOne"
+            android:name=".DayName"
             android:exported="false"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity

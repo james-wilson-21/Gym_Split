@@ -17,6 +17,7 @@ public class AddWorkout extends AppCompatActivity {
     TextView workOutName, splitDays;
     EditText workoutInput, splitInput;
     Button dayOneButton, cancelButton;
+    int currentDay = 1;
 
 //    Boolean workout_next, split_next;
 
@@ -94,9 +95,10 @@ public class AddWorkout extends AppCompatActivity {
         dayOneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AddWorkout.this, DayOne.class);
+                Intent intent = new Intent(AddWorkout.this, DayName.class);
                 intent.putExtra("keyname", workOutTitle);
                 intent.putExtra("keySplit", splitNumber);
+                intent.putExtra("keyCurrent", currentDay);
                 startActivity(intent);
             }
         });
